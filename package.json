@@ -1,0 +1,13 @@
+{
+  "name": "ecolucrum",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Landing page do EcoLucrum, projeto acadêmico do grupo Coetus.",
+  "engines": { "node": ">=22.13.0" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test",
+    "check": "npm run build && npm test"
+  }
+}

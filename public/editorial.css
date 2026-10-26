@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;650;700&display=swap');
+/* A quieter layout, led by the project and its working demonstration. */
+:root{--muted:#66715f;--line:#dbe1d2}
+.button{border-radius:4px;gap:16px;font-weight:550}
+.button:hover{transform:none}
+.nav-wrap nav{margin-left:0;font-size:13px;gap:32px}
+.button-nav{border-radius:3px;min-height:42px}
+.hero-layout{grid-template-columns:1.1fr 1fr;gap:70px;padding-top:48px;padding-bottom:64px}
+.hero-copy{padding:0;min-width:0}
+.hero h1{font-size:clamp(48px,5.1vw,70px);font-weight:600;line-height:1.12;letter-spacing:-2.3px;margin:0 0 27px}
+.hero h1>span{color:inherit}
+.hero-copy>p{font-size:16px;line-height:1.85;max-width:430px;margin:0 0 31px}
+.hero-actions{gap:0}
+.hero-actions>.button{min-height:52px;font-size:13px;padding:15px 21px}
+.hero-visual{min-width:0;display:flex;flex-direction:column;gap:18px;justify-content:center;align-items:center;width:100%;min-height:560px;transform:none;margin:0;isolation:auto}
+.phone{width:360px;max-width:100%;transform:none;border:1px solid #c5cebb;border-radius:8px;background:#fcfcf7;box-shadow:none;transition:border-color .2s}
+.hero-visual:focus-within .phone,.hero-visual.demo-highlight .phone{transform:none;box-shadow:none;border-color:var(--pine)}
+.phone-content{padding:24px}
+.app-greeting{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:22px}
+.app-greeting h2{font-size:17px;letter-spacing:-.4px;font-weight:600;line-height:1.4;margin:0}
+.app-greeting>span{font-size:10px;color:#7c8671}
+.balance-card{border-radius:4px;padding:17px 18px 15px}
+.balance-caption{font-size:12px}
+.balance-caption svg{display:none}
+.balance-number{margin:11px 0 13px}
+.balance-number strong{font-size:43px;font-weight:600;letter-spacing:-1.3px}
+.balance-number>span{font-size:12px}
+.level-label{font-size:9px;line-height:1.6;padding-top:10px;color:#bfceb4}
+.daily-heading{margin-top:24px;margin-bottom:6px}
+.daily-heading h3{font-size:12px;font-weight:550}
+.daily-heading>span{font-size:10px;padding:0;background:none;border-radius:0}
+.tasks{gap:0}
+.task{min-height:64px;padding:13px 0;border:0;border-bottom:1px solid #e1e6d8;border-radius:0;background:none;gap:10px}
+.task:hover,.task[aria-pressed=true]{background:none;border-color:#c3d2ae}
+.task-icon{width:22px;height:26px;background:none;border-radius:0;color:#7c9066}
+.task-icon svg{width:20px;height:20px}
+.task-copy{gap:5px}
+.task-copy strong{font-size:11px;font-weight:550}
+.task-copy small{font-size:9px;line-height:1.5}
+.task-points{font-size:10px;font-weight:550}
+.task-check{width:17px;height:17px;border-radius:3px}
+.task-check svg{width:12px;height:12px}
+.mini-reward{padding:21px 0 0;align-items:start;gap:11px}
+.reward-icon{background:none;border-radius:0;color:#82936c;width:22px;height:25px}
+.reward-icon svg{width:21px;height:21px}
+.mini-reward strong{font-size:10px;font-weight:550}
+.mini-reward small{font-size:9px;line-height:1.7;margin:6px 0 9px}
+.progress-track{height:3px;border-radius:0}
+.demo-redeem{min-height:34px;margin-top:12px;border-radius:3px;font-size:10px;padding:8px 10px}
+.demo-reset{min-height:27px;padding-top:9px;font-size:9px}
+.demo-hint{position:static;transform:none;white-space:normal;font-size:11px;line-height:1.7;max-width:360px;text-align:center;color:#7a856f}
+.section-space{padding-block:80px}
+.how{border-top:1px solid var(--line)}
+.section-heading{align-items:start;gap:65px;margin-bottom:35px}
+.section-heading h2,.reward-heading h2,.manifesto-copy h2,.faq h2{font-size:32px;line-height:1.25;letter-spacing:-1px;font-weight:600;margin:0}
+.section-heading>p,.reward-heading>p{font-size:14px;line-height:1.85;max-width:380px;margin:0}
+.steps{gap:40px}
+.step{padding-top:21px;border-color:#cdd6c2}
+.step-top>span{font-size:12px;font-weight:400;color:#839076}
+.step h3{font-size:19px;font-weight:550;letter-spacing:-.5px;margin:18px 0 12px}
+.step p{font-size:13px;line-height:1.85;max-width:none;margin:0}
+.rewards{background:#f0f3e9}
+.reward-heading{align-items:start;gap:55px}
+.reward-toolbar{border-bottom:1px solid #d5ddc9;margin:34px 0 25px;padding:0}
+.reward-filters .filter,.reward-filters .filter:hover{font-size:12px;font-weight:500;display:inline-block;background:none;color:var(--pine);border:0;border-bottom:2px solid var(--pine);border-radius:0;padding:0 0 10px;letter-spacing:0}
+.reward-grid{gap:28px}
+.reward-card,.reward-card:hover{background:none;border:0;border-radius:0;transform:none}
+.reward-art{height:210px;border-radius:2px}
+.coffee-art{background:#e3e9d3}.bike-art{background:#dee8de}.ticket-art{background:#ece5d5}
+.art-category{font-size:10px;letter-spacing:0;font-weight:500;top:18px;left:18px}
+.reward-art>svg{width:225px;height:167px;right:14px;top:26px}
+.reward-art .bike-illustration{width:240px;right:8px;top:27px}
+.reward-card-copy{padding:20px 0 0;border-bottom:1px solid #d1dbc6}
+.reward-card h3{font-size:19px;font-weight:550;letter-spacing:-.5px;margin:0 0 11px}
+.reward-card p{font-size:12px;line-height:1.85;min-height:45px;margin:0 0 19px}
+.reward-detail{display:inline-flex;width:auto;justify-content:start;border:0;padding:0 0 20px;font-size:12px;font-weight:500;text-decoration:underline;text-underline-offset:4px}
+.feedback-panel{border:0;border-top:1px solid #d1dbc6;border-radius:0;background:none;padding:42px 0 0;margin-top:42px;gap:65px;grid-template-columns:.85fr 1.15fr}
+.feedback-copy h3{font-size:27px;font-weight:550;letter-spacing:-.8px;margin:0 0 16px;line-height:1.3}
+.feedback-copy>p{font-size:13px;line-height:1.85;margin:0 0 17px;max-width:320px}
+.feedback-privacy{font-size:11px;color:#7b876d}
+.feedback-options{gap:0 24px}
+.feedback-option{min-height:58px;border:0;border-bottom:1px solid #d4ddc9;border-radius:0;background:none;padding:14px 0;font-size:12px;gap:11px}
+.feedback-option:hover,.feedback-option:has(input:checked){background:none;border-color:#bacb9f}
+.feedback-option:has(input:checked)>span{font-weight:550}
+.feedback-option input{width:14px;height:14px}
+.feedback-actions{margin-top:23px;gap:22px}
+.feedback-actions>.button{border-radius:3px;font-size:11px;font-weight:500;min-height:44px}
+.feedback-status{font-size:11px;margin-top:15px}
+.feedback-results h4{font-size:17px;font-weight:550;letter-spacing:-.4px}
+.feedback-results-heading>span{font-size:10px}
+.feedback-result-row>div:first-child{font-size:11px}
+.feedback-result-track{border-radius:0;height:3px}
+.feedback-result-track>span{border-radius:0;background:#839d5d}
+.manifesto-layout{grid-template-columns:.85fr 1.15fr;gap:100px}
+.manifesto-art{background:none;border-radius:0;height:320px;overflow:clip}
+.manifesto-art>.sprout-scene{margin-top:0;width:300px;height:300px}
+.motion-toggle{border:0;border-radius:0;background:none;color:#c6d5b5;opacity:.7}
+.motion-toggle:hover{background:none;color:var(--lime);opacity:1}
+.manifesto-copy>p{font-size:14px;line-height:1.9;max-width:440px;color:#c3cfba;margin:21px 0 0}
+.project-status{font-size:11px;color:#97ad89;margin-top:24px;letter-spacing:0}
+.team{margin-top:25px;padding-top:22px;border-color:#ffffff20}
+.team>span{font-size:11px;letter-spacing:0;color:#a6bb98}
+.team .team-name{font-size:27px;font-weight:500;letter-spacing:-.7px;color:var(--cream);margin-top:9px}
+.faq-layout{grid-template-columns:.85fr 1.15fr;gap:100px}
+.faq-list details{padding:20px 0}
+.faq-list summary{font-size:14px;font-weight:500}
+.faq-list details p{font-size:13px;line-height:1.85}
+footer{padding-top:15px}
+.footer-top>p{font-size:12px}
+.footer-bottom{font-size:10px;padding-top:23px}
+dialog{border-radius:8px;box-shadow:none}
+dialog::backdrop{background:#102f246e;backdrop-filter:none}
+dialog .eyebrow{font-size:11px;font-weight:500;letter-spacing:0;line-height:1.6;color:#78876b}
+dialog h2{font-size:28px;font-weight:550;letter-spacing:-.8px;margin:13px 0 16px}
+.dialog-close{background:none;border-radius:0;color:#7e8e71}
+.dialog-points{background:none;border-radius:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 0}
+.dialog-points>svg{display:none}
+.dialog-availability{font-size:12px}
+.receipt-check{width:20px;height:20px;border-radius:0;background:none}
+.receipt-ticket{border-radius:3px;background:#f0f4e9;padding:23px 20px}
+.receipt-ticket>span:first-child{font-size:10px;letter-spacing:0}
+.receipt-ticket>strong{font-size:24px;font-weight:550;letter-spacing:-.5px}
+.receipt-ticket>small{font-size:9px;letter-spacing:0;line-height:1.7}
+.receipt-ticket .receipt-code{font-size:16px;letter-spacing:1px}
+.receipt-head{font-size:12px}
+.dialog-note{font-size:11px!important;line-height:1.8}
+@media(min-width:1500px){.hero-layout{padding-top:55px;padding-bottom:70px}.hero h1{font-size:70px}.hero-visual{min-height:560px}}
+@media(max-width:1100px){.hero-layout{gap:36px}.phone{width:335px}.phone-content{padding:21px}.hero h1{font-size:57px}.manifesto-layout,.faq-layout{gap:65px}.feedback-panel{gap:40px}.reward-grid{gap:22px}.reward-card h3{font-size:17px}}
+@media(max-width:850px){.hero-layout{gap:30px;padding-top:35px;padding-bottom:50px;grid-template-columns:1fr 1fr}.hero h1{font-size:48px;letter-spacing:-1.8px}.hero-copy>p{font-size:14px;line-height:1.9}.hero-visual{width:100%;margin:0;transform:none;min-height:540px}.phone{width:310px}.phone-content{padding:18px}.app-greeting h2{font-size:15px}.app-greeting>span{font-size:9px}.task{gap:8px}.task-copy strong{font-size:10px}.task-copy small{font-size:8px}.task-icon{width:19px}.task-points{font-size:9px}.task-check{width:15px;height:15px}.demo-hint{font-size:10px}.section-space{padding-block:65px}.section-heading,.reward-heading{gap:40px}.section-heading h2,.reward-heading h2,.manifesto-copy h2,.faq h2{font-size:29px}.section-heading>p,.reward-heading>p{font-size:13px;max-width:290px}.steps{gap:25px}.step h3{font-size:17px}.step p{font-size:12px}.reward-grid{gap:17px}.reward-art{height:185px}.reward-art>svg{width:200px;height:148px;right:0;top:29px}.reward-art .bike-illustration{width:210px;right:-4px;top:30px}.art-category{font-size:9px;left:15px;top:14px}.reward-card h3{font-size:16px}.reward-card p{font-size:11px;min-height:58px}.feedback-panel{gap:30px;grid-template-columns:.8fr 1.2fr}.feedback-copy h3{font-size:25px}.feedback-copy>p{font-size:12px}.feedback-option{font-size:10px;gap:8px}.feedback-options{gap:0 18px}.feedback-actions{gap:16px}.feedback-actions>.button{font-size:10px;padding-inline:12px}.feedback-text-button{font-size:10px}.manifesto-layout,.faq-layout{gap:50px}.manifesto-art>.sprout-scene{width:270px;height:270px}.manifesto-copy>p{font-size:13px}.faq-list summary{font-size:13px}}
+@media(max-width:650px){.nav-wrap{height:83px}.nav-wrap nav{top:83px}.hero-layout{grid-template-columns:1fr;gap:34px;padding-top:36px;padding-bottom:45px}.hero h1{font-size:clamp(38px,10.5vw,56px);font-weight:600;letter-spacing:-1.5px;line-height:1.15;margin:0 0 22px}.hero h1>span{display:inline;color:inherit}.hero-copy>p{max-width:360px;font-size:14px;line-height:1.85;margin-bottom:24px}.hero-actions{flex-direction:row;gap:0}.hero-actions>.button{font-size:12px;min-height:48px;padding:13px 18px}.hero-visual{width:100%;margin:0;transform:none;min-height:0;gap:15px;scroll-margin-top:20px}.phone{width:360px;border-radius:5px}.phone-content{padding:21px}.app-greeting h2{font-size:16px}.app-greeting>span{font-size:10px}.balance-number strong{font-size:42px}.task{min-height:66px;gap:10px}.task-copy strong{font-size:11px}.task-copy small{font-size:9px}.task-icon{width:22px}.task-points{font-size:10px}.task-check{width:17px;height:17px}.mini-reward strong{font-size:10px}.mini-reward small{font-size:9px}.demo-hint{font-size:10px;max-width:none;line-height:1.7}.section-space{padding-block:48px}.section-heading,.reward-heading{display:block;margin-bottom:29px}.section-heading h2,.reward-heading h2,.manifesto-copy h2,.faq h2{font-size:28px;letter-spacing:-.9px}.section-heading>p,.reward-heading>p{font-size:13px;max-width:none;margin-top:17px;line-height:1.9}.steps{gap:24px;grid-template-columns:1fr}.step{padding-top:19px}.step h3{font-size:19px;margin:13px 0 10px}.step p{font-size:13px;line-height:1.85}.step-top{gap:0}.reward-toolbar{margin-top:25px;margin-bottom:23px}.reward-grid{grid-template-columns:1fr;gap:30px}.reward-art{height:210px}.reward-art>svg{width:245px;height:182px;right:12px;top:20px}.reward-art .bike-illustration{width:260px;right:6px;top:19px}.art-category{font-size:10px;left:18px;top:17px}.reward-card-copy{padding-top:19px}.reward-card h3{font-size:20px}.reward-card p{font-size:13px;min-height:0;margin-bottom:17px}.reward-detail{font-size:12px;padding-bottom:19px}.feedback-panel{padding:31px 0 0;margin-top:35px;grid-template-columns:1fr;gap:23px}.feedback-copy h3{font-size:27px;margin:0 0 14px}.feedback-copy h3 br{display:none}.feedback-copy>p{font-size:13px;max-width:none;margin-bottom:12px}.feedback-privacy{font-size:11px}.feedback-options{grid-template-columns:1fr;gap:0}.feedback-option{min-height:54px;font-size:12px;padding:14px 0;gap:11px}.feedback-actions{flex-wrap:wrap;gap:22px;margin-top:22px}.feedback-actions>.button{font-size:11px;padding-inline:15px}.feedback-text-button{font-size:11px}.feedback-status{font-size:10px}.manifesto-layout{grid-template-columns:1fr;gap:32px}.manifesto-art{height:260px;width:100%;max-width:330px}.manifesto-art>.sprout-scene{width:260px;height:260px;margin-top:0}.manifesto-copy>p{font-size:13px;line-height:1.9;margin-top:18px;max-width:none}.project-status{margin-top:20px;font-size:11px}.team{margin-top:22px;padding-top:20px}.team .team-name{font-size:26px}.team>span{font-size:11px}.faq-layout{grid-template-columns:1fr;gap:25px}.faq-list details p{font-size:12px}.footer-top{padding-bottom:23px;gap:18px}.footer-top>p{font-size:11px}.footer-bottom{font-size:10px;padding-top:20px}.footer-bottom>span:last-child{font-size:10px}footer{padding-top:0}.dialog-points{gap:8px;padding:15px 0}.dialog-availability{font-size:11px}.dialog-note{font-size:10px!important}.receipt-ticket>small{font-size:8px}}
+@media(prefers-reduced-motion:reduce){.phone{transition:none}}
+
+/* Type and reward composition. */
+h1,h2,h3{font-kerning:normal}
+.hero h1{font-size:clamp(48px,5vw,66px);font-weight:500;letter-spacing:-1.5px;line-height:1.16}
+.hero-copy>p{font-size:17px;line-height:1.75;max-width:420px}
+.nav-wrap nav{font-size:15px}
+.button{font-family:var(--font);font-weight:600;font-size:14px}
+.app-greeting h2,.daily-heading h3,.balance-number strong,.mini-reward strong{font-family:var(--font)}
+.app-greeting h2{font-size:19px;letter-spacing:-.3px}.task-copy strong{font-size:12px}.task-copy small{font-size:10px}.mini-reward strong{font-size:11px}.mini-reward small{font-size:10px}
+.section-heading h2,.reward-heading h2,.manifesto-copy h2,.faq h2{font-weight:500;letter-spacing:-.6px;line-height:1.25}
+.section-heading>p,.reward-heading>p{font-size:16px;line-height:1.7;max-width:360px}
+.step h3{font-weight:500;font-size:21px;letter-spacing:-.3px}.step p{font-size:15px;line-height:1.7}
+.rewards{background:#eef1e6}.reward-heading{gap:60px;align-items:center}.reward-heading h2{max-width:480px;font-size:36px}.reward-toolbar{margin-top:31px;margin-bottom:28px}.reward-filters .filter,.reward-filters .filter:hover{font-size:14px}
+.reward-grid{display:grid;grid-template-columns:1.04fr 1fr;grid-template-rows:repeat(2,minmax(0,1fr));gap:24px 32px;align-items:stretch}
+.reward-card:first-child{grid-row:1 / 3;display:flex;flex-direction:column;overflow:hidden;border:1px solid #d1dac6;border-radius:6px;background:#fafbf6}
+.reward-card:first-child .reward-art{height:292px;flex:none;border-radius:0;background:#1c4935}
+.reward-card:first-child .art-category{font-size:13px;color:#f0f5df;left:24px;top:21px;font-weight:500}
+.reward-card:first-child .reward-art>svg{width:310px;height:230px;left:50%;right:auto;top:41px;transform:translateX(-50%)}
+.reward-card:first-child .reward-card-copy{flex:1;display:flex;flex-direction:column;border:0;padding:25px 28px 24px}
+.reward-card:not(:first-child){display:grid;grid-template-columns:170px minmax(0,1fr);gap:24px;align-items:center;border-bottom:1px solid #d0d9c4;padding:0 0 18px}
+.reward-card:not(:first-child) .reward-art{height:190px;border-radius:4px}
+.reward-card:not(:first-child) .reward-art>svg{width:168px;height:143px;left:auto;right:0;top:41px;transform:none}
+.reward-card:not(:first-child) .art-category{font-size:12px;left:14px;top:15px;font-weight:500}
+.reward-card:not(:first-child) .reward-card-copy{border:0;padding:0}
+.reward-card h3{font-size:26px;font-weight:500;letter-spacing:-.5px;line-height:1.25;margin:0 0 12px}
+.reward-card p{font-size:15px;line-height:1.65;min-height:0;margin:0 0 18px;color:#6c7662}
+.reward-detail{font-family:var(--font);font-size:14px;font-weight:600;line-height:1.6;min-height:31px;padding:0;text-decoration-thickness:1px;text-underline-offset:5px;align-self:start;margin-top:auto}
+.bike-art{background:#e0e7d5}.ticket-art{background:#e8dfca}
+.feedback-panel{margin-top:44px;padding-top:40px;gap:60px}
+.feedback-copy h3{font-size:30px;font-weight:500;letter-spacing:-.6px;line-height:1.25}.feedback-copy>p{font-size:15px;line-height:1.7}.feedback-privacy{font-size:12px}.feedback-option{font-size:14px}.feedback-options{gap:0 28px}.feedback-text-button{font-size:13px}.feedback-actions>.button{font-size:13px;padding-inline:18px}.feedback-results h4{font-family:var(--font);font-size:19px;font-weight:600;letter-spacing:-.2px}.feedback-result-row>div:first-child{font-size:13px}.feedback-result-row strong{font-size:12px}.feedback-result-track{height:4px}.feedback-status{font-size:12px}
+.manifesto-copy>p{font-size:16px;line-height:1.75}.team .team-name{font-size:29px;font-weight:500;letter-spacing:-.3px}.faq-list summary{font-size:16px}.faq-list details p{font-size:15px;line-height:1.75}
+dialog h2{font-weight:500;letter-spacing:-.5px}.dialog-copy,dialog>p{font-size:15px}.dialog-availability{font-size:14px}.dialog-note{font-size:12px!important}
+.demo-page{min-height:100dvh}
+.demo-page-header{height:100px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:25px}
+.demo-return{font-size:14px;text-decoration:underline;text-underline-offset:4px;white-space:nowrap}.demo-return>span{margin-left:10px;text-decoration:none;display:inline-block}
+.demo-page-layout{display:grid;grid-template-columns:1fr 1.05fr;gap:90px;align-items:start;padding-top:60px;padding-bottom:70px}
+.demo-page-label{font-size:14px;color:#7d896e}
+.demo-page-copy h1{font-family:var(--display);font-size:48px;font-weight:500;line-height:1.18;letter-spacing:-1px;margin:17px 0 22px}
+.demo-page-copy>p{font-size:17px;color:var(--muted);line-height:1.8;max-width:410px}
+.demo-instructions{list-style:none;padding:0;margin:36px 0 0;max-width:410px}
+.demo-instructions>li{display:flex;align-items:start;gap:19px;padding:19px 0;border-top:1px solid var(--line)}
+.demo-instructions>li>span{font-size:13px;color:#8b957e;padding-top:3px;font-variant-numeric:tabular-nums}
+.demo-instructions strong{font-size:16px;font-weight:600}.demo-instructions p{font-size:14px;line-height:1.6;margin:5px 0 0;color:var(--muted)}
+.demo-page-copy .demo-page-note{font-size:12px;line-height:1.7;max-width:380px;color:#88917d;margin-top:24px}
+.demo-page .hero-visual{width:100%;min-height:0;gap:16px;max-width:460px;margin-left:auto}
+.demo-page .phone{width:460px;max-width:100%;border-color:#bbc9ad;background:#fcfcf7}
+.demo-page .phone-content{padding:28px}
+.demo-page .app-greeting h2{font-size:21px}
+.demo-page .app-greeting>span{font-size:12px}
+.demo-page .balance-card{padding:22px 23px 18px}
+.demo-page .balance-caption{font-size:14px}
+.demo-page .balance-number strong{font-size:53px}
+.demo-page .level-label{font-size:11px}
+.demo-page .daily-heading h3{font-size:14px}.demo-page .daily-heading>span{font-size:12px}
+.demo-page .task{min-height:76px;gap:13px}
+.demo-page .task-copy strong{font-size:14px}.demo-page .task-copy small{font-size:12px}.demo-page .task-points{font-size:12px}
+.demo-page .task-check{width:19px;height:19px}.demo-page .task-icon{width:24px}
+.demo-page .mini-reward strong{font-size:13px}.demo-page .mini-reward small{font-size:12px}
+.demo-page .demo-redeem{font-size:13px;min-height:42px;padding:9px 13px}
+.demo-page .demo-reset{font-size:12px;min-height:32px}
+.demo-page .demo-hint{font-size:12px}
+@media(max-width:1100px){.hero h1{font-size:56px}.reward-grid{gap:22px 26px;grid-template-columns:1fr 1fr}.reward-card:not(:first-child){grid-template-columns:145px minmax(0,1fr);gap:19px}.reward-card:not(:first-child) .reward-art{height:185px}.reward-card:not(:first-child) .reward-art>svg{width:145px;height:137px;top:43px}.reward-card h3{font-size:23px}.reward-card:first-child .reward-art{height:286px}.demo-page-layout{gap:50px}.demo-page-copy h1{font-size:44px}.demo-page .phone-content{padding:24px}}
+@media(max-width:850px){.hero h1{font-size:46px}.hero-copy>p{font-size:16px}.section-heading h2,.reward-heading h2,.manifesto-copy h2,.faq h2{font-size:31px}.section-heading>p,.reward-heading>p{font-size:15px;max-width:300px}.reward-grid{grid-template-columns:1fr;grid-template-rows:auto;gap:25px}.reward-card:first-child{grid-row:auto;display:grid;grid-template-columns:1fr 1fr}.reward-card:first-child .reward-art{height:245px}.reward-card:first-child .reward-art>svg{width:265px;height:196px;top:37px}.reward-card:first-child .reward-card-copy{padding:25px;justify-content:center}.reward-card:not(:first-child){grid-template-columns:160px minmax(0,1fr);gap:25px}.reward-card:not(:first-child) .reward-art{height:168px}.reward-card:not(:first-child) .reward-art>svg{width:160px;height:128px;top:37px}.reward-card h3{font-size:25px}.reward-card p{font-size:15px}.feedback-panel{gap:35px}.feedback-copy h3{font-size:28px}.feedback-option{font-size:13px}.demo-page-layout{grid-template-columns:.9fr 1.1fr;gap:30px}.demo-page-copy h1{font-size:37px}.demo-page-copy>p{font-size:16px}.demo-page .phone-content{padding:20px}.demo-page .task{gap:9px}.demo-page .task-copy strong{font-size:12px}.demo-page .task-copy small{font-size:10px}.demo-page .task-points{font-size:11px}.demo-page .app-greeting h2{font-size:18px}.demo-page .app-greeting>span{font-size:10px}}
+@media(max-width:650px){.hero h1{font-size:clamp(37px,10.3vw,54px);letter-spacing:-1px}.hero-copy>p{font-size:16px;line-height:1.75}.nav-wrap nav{font-size:14px}.app-greeting h2{font-size:18px}.task-copy strong{font-size:12px}.task-copy small{font-size:10px}.reward-heading h2{font-size:32px}.section-heading>p,.reward-heading>p{font-size:15px;max-width:none}.reward-grid{gap:23px}.reward-card:first-child{display:flex;flex-direction:column}.reward-card:first-child .reward-art{height:258px}.reward-card:first-child .art-category{font-size:12px;left:21px;top:19px}.reward-card:first-child .reward-art>svg{width:278px;height:206px;top:36px}.reward-card:first-child .reward-card-copy{padding:22px}.reward-card h3{font-size:24px}.reward-card p{font-size:15px}.reward-card:not(:first-child){grid-template-columns:120px minmax(0,1fr);gap:19px;padding-bottom:20px}.reward-card:not(:first-child) .reward-art{height:166px}.reward-card:not(:first-child) .reward-art>svg{width:123px;height:118px;right:-1px;top:42px}.reward-card:not(:first-child) .art-category{font-size:11px;left:11px;top:13px}.reward-card:not(:first-child) h3{font-size:21px;line-height:1.3}.reward-card:not(:first-child) p{font-size:14px;line-height:1.6;margin-bottom:12px}.reward-detail{font-size:14px}.feedback-panel{margin-top:34px;padding-top:32px;gap:22px}.feedback-copy h3{font-size:29px}.feedback-copy>p{font-size:15px}.feedback-privacy{font-size:12px}.feedback-option{font-size:14px}.feedback-results h4{font-size:18px}.feedback-result-row>div:first-child{font-size:13px}.feedback-text-button{font-size:13px}.feedback-actions>.button{font-size:13px}.manifesto-copy>p{font-size:16px}.faq-list summary{font-size:15px}.faq-list details p{font-size:14px}.demo-page-header{height:84px;gap:18px}.demo-page-header .brand-logo{width:145px}.demo-return{font-size:12px}.demo-return>span{margin-left:6px}.demo-page-layout{grid-template-columns:1fr;gap:29px;padding-top:30px;padding-bottom:42px}.demo-page-copy h1{font-size:38px;line-height:1.18;letter-spacing:-.8px;margin:13px 0 17px}.demo-page-copy h1 br{display:none}.demo-page-label{font-size:13px}.demo-page-copy>p{font-size:16px;max-width:none;margin:0}.demo-instructions{display:none}.demo-page-copy .demo-page-note{font-size:12px;margin-top:16px;max-width:none}.demo-page .hero-visual{margin:0;max-width:none}.demo-page .phone{width:100%}.demo-page .phone-content{padding:21px}.demo-page .app-greeting h2{font-size:18px}.demo-page .app-greeting>span{font-size:10px}.demo-page .balance-card{padding:20px 18px 16px}.demo-page .balance-number strong{font-size:48px}.demo-page .balance-caption{font-size:13px}.demo-page .level-label{font-size:10px}.demo-page .task{gap:9px;min-height:72px}.demo-page .task-copy strong{font-size:12px}.demo-page .task-copy small{font-size:10px}.demo-page .task-points{font-size:11px}.demo-page .task-icon{width:22px}.demo-page .task-check{width:17px;height:17px}.demo-page .mini-reward strong{font-size:12px}.demo-page .mini-reward small{font-size:11px}.demo-page .demo-redeem{font-size:12px}.demo-page .demo-reset{font-size:11px}.demo-page .demo-hint{font-size:11px}}

@@ -1,0 +1,13 @@
+{
+  // Configuração exclusiva do emulador local. Não contém IDs de recursos reais.
+  "name": "ecolucrum-local",
+  "pages_build_output_dir": "./dist",
+  "compatibility_date": "2026-10-25",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "ecolucrum-feedback-local",
+      "database_id": "local-ecolucrum-feedback"
+    }
+  ]
+}
